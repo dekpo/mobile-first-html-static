@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,27 +12,32 @@
     <link rel="stylesheet" href="assets/css/w3css.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
-        main{
+
+        main {
             margin-top: 150px;
         }
-        section{
+
+        section {
             scroll-margin-top: 50px;
         }
     </style>
 </head>
+
 <body>
+    <!-- HEADER START -->
     <header class="w3-top w3-white">
-        <nav id="desktopNav" class="w3-bar">
-        <a href="javascript:void(0)" onclick="toogleNavbar()" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button">Home</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+        <nav id="desktopNav" class="w3-bar w3-border-bottom">
+            <a href="javascript:void(0)" onclick="toogleNavbar()"
+                class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
         </nav>
 
         <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
@@ -40,32 +46,112 @@
             <a href="#contact" onclick="toogleNavbar()" class="w3-bar-item w3-button">Contact</a>
         </nav>
     </header>
-    <main>
+    <!-- HEADER END -->
+    <!-- MAIN START -->
+    <main class="w3-container">
+        <!-- HOME SECTION START -->
         <section id="home"></section>
+
+        <!-- ABOUT SECTION START -->
         <section id="about">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae? Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo excepturi fuga fugit ab voluptas. Architecto modi iste ipsam similique ab at neque, commodi quos. Eligendi, beatae. Suscipit voluptatibus culpa tempora. Delectus dignissimos eos culpa aliquam provident cum voluptatibus, laboriosam quae ab, ea rerum blanditiis. Eveniet officiis tempora culpa, ullam ex molestias ad laborum quidem obcaecati molestiae dolor voluptatibus nesciunt. Soluta, error sed! Laboriosam veritatis aliquam dolor corporis pariatur exercitationem quod perspiciatis placeat, esse dolorum neque temporibus repellat nam, sunt voluptatum commodi nisi totam quo? Molestiae hic facere repudiandae ut quod at commodi, voluptatum ipsam odit quis accusantium temporibus eveniet dignissimos ipsa explicabo reprehenderit libero culpa omnis facilis, necessitatibus eligendi numquam? Aperiam harum quidem quos blanditiis. Recusandae natus praesentium excepturi soluta, magnam beatae, cupiditate ducimus inventore laboriosam voluptatum fugit rerum sunt. Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <img src="assets/images/code-HTML_1280.jpg" alt="exemple de code HTML" class="w3-image">
+                </div>
+                <div class="w3-half w3-padding">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui
+                        accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur
+                        autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore
+                        voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil
+                        nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae?
+                        Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo
+                        excepturi fuga fugit ab voluptas. Architecto modi iste ipsam similique ab at neque, commodi
+                        quos. Eligendi, beatae. Suscipit voluptatibus culpa </p>
+                </div>
+            </div>
         </section>
+        <!-- PORTFOLIO SECTION START -->
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <article></article>
-            <article></article>
-            <article></article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae? Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo excepturi fuga fugit ab voluptas. Architecto modi iste ipsam similique ab at neque, commodi quos. Eligendi, beatae. Suscipit voluptatibus culpa tempora. Delectus dignissimos eos culpa aliquam provident cum voluptatibus, laboriosam quae ab, ea rerum blanditiis. Eveniet officiis tempora culpa, ullam ex molestias ad laborum quidem obcaecati molestiae dolor voluptatibus nesciunt. Soluta, error sed! Laboriosam veritatis aliquam dolor corporis pariatur exercitationem quod perspiciatis placeat, esse dolorum neque temporibus repellat nam, sunt voluptatum commodi nisi totam quo? Molestiae hic facere repudiandae ut quod at commodi, voluptatum ipsam odit quis accusantium temporibus eveniet dignissimos ipsa explicabo reprehenderit libero culpa omnis facilis, necessitatibus eligendi numquam? Aperiam harum quidem quos blanditiis. Recusandae natus praesentium excepturi soluta, magnam beatae, cupiditate ducimus inventore laboriosam voluptatum fugit rerum sunt. Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
+
+            <div class="w3-row-padding">
+                <article class="w3-col m4 w3-center">
+                    <div class="w3-card">
+                        <h3>Happy Children</h3>
+                        <img src="assets/images/happy-children-on-desktop_1280.jpg" alt="happy children on desktop"
+                            class="w3-image">
+                    </div>
+                </article>
+                <article class="w3-col m4 w3-center">
+                    <div class="w3-card">
+                        <h3>Laptop Hillness</h3>
+                        <img src="assets/images/laptop-hillness_1280.jpg" alt="laptop hillness" class="w3-image">
+                    </div>
+                </article>
+                <article class="w3-col m4 w3-center">
+                    <div class="w3-card">
+                        <h3>Student At Work</h3>
+                        <img src="assets/images/student-at-work_1280.jpg" alt="student at work" class="w3-image">
+                    </div>
+                </article>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus
+                natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus
+                aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore voluptatibus laudantium fugit
+                cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil nostrum ut earum accusantium alias autem
+                ipsa debitis, quod dicta, voluptatem molestiae? Tempora, accusantium nemo quibusdam vitae quos nesciunt
+                pariatur velit accusamus totam explicabo excepturi fuga fugit ab voluptas. Architecto modi iste ipsam
+                similique ab at neque, commodi quos. Eligendi, beatae. Suscipit voluptatibus culpa tempora. Delectus
+                dignissimos eos culpa aliquam provident cum voluptatibus, laboriosam quae ab, ea rerum blanditiis.
+                Eveniet officiis tempora culpa, ullam ex molestias ad laborum quidem obcaecati molestiae dolor
+                voluptatibus nesciunt. Soluta, error sed! Laboriosam veritatis aliquam dolor corporis pariatur
+                exercitationem quod perspiciatis placeat, esse dolorum neque temporibus repellat nam, sunt voluptatum
+                commodi nisi totam quo? Molestiae hic facere repudiandae ut quod at commodi, voluptatum ipsam odit quis
+                accusantium temporibus eveniet dignissimos ipsa explicabo reprehenderit libero culpa omnis facilis,
+                necessitatibus eligendi numquam? Aperiam harum quidem quos blanditiis. Recusandae natus praesentium
+                excepturi soluta, magnam beatae, cupiditate ducimus inventore laboriosam voluptatum fugit rerum sunt.
+                Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
         </section>
+        <!-- CONTACT SECTION START -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae? Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo excepturi fuga fugit ab voluptas. Architecto modi iste ipsam similique ab at neque, commodi quos. Eligendi, beatae. Suscipit voluptatibus culpa tempora. Delectus dignissimos eos culpa aliquam provident cum voluptatibus, laboriosam quae ab, ea rerum blanditiis. Eveniet officiis tempora culpa, ullam ex molestias ad laborum quidem obcaecati molestiae dolor voluptatibus nesciunt. Soluta, error sed! Laboriosam veritatis aliquam dolor corporis pariatur exercitationem quod perspiciatis placeat, esse dolorum neque temporibus repellat nam, sunt voluptatum commodi nisi totam quo? Molestiae hic facere repudiandae ut quod at commodi, voluptatum ipsam odit quis accusantium temporibus eveniet dignissimos ipsa explicabo reprehenderit libero culpa omnis facilis, necessitatibus eligendi numquam? Aperiam harum quidem quos blanditiis. Recusandae natus praesentium excepturi soluta, magnam beatae, cupiditate ducimus inventore laboriosam voluptatum fugit rerum sunt. Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus
+                natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus
+                aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore voluptatibus laudantium fugit
+                cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil nostrum ut earum accusantium alias autem
+                ipsa debitis, quod dicta, voluptatem molestiae? Tempora, accusantium nemo quibusdam vitae quos nesciunt
+                pariatur velit accusamus totam explicabo excepturi fuga fugit ab voluptas. Architecto modi iste ipsam
+                similique ab at neque, commodi quos. Eligendi, beatae. Suscipit voluptatibus culpa tempora. Delectus
+                dignissimos eos culpa aliquam provident cum voluptatibus, laboriosam quae ab, ea rerum blanditiis.
+                Eveniet officiis tempora culpa, ullam ex molestias ad laborum quidem obcaecati molestiae dolor
+                voluptatibus nesciunt. Soluta, error sed! Laboriosam veritatis aliquam dolor corporis pariatur
+                exercitationem quod perspiciatis placeat, esse dolorum neque temporibus repellat nam, sunt voluptatum
+                commodi nisi totam quo? Molestiae hic facere repudiandae ut quod at commodi, voluptatum ipsam odit quis
+                accusantium temporibus eveniet dignissimos ipsa explicabo reprehenderit libero culpa omnis facilis,
+                necessitatibus eligendi numquam? Aperiam harum quidem quos blanditiis. Recusandae natus praesentium
+                excepturi soluta, magnam beatae, cupiditate ducimus inventore laboriosam voluptatum fugit rerum sunt.
+                Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
         </section>
     </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
     <footer></footer>
+    <!-- FOOTER END -->
     <script>
-        function toogleNavbar()
-        {
+        function toogleNavbar() {
             var nav = document.getElementById("mobileNav");
             nav.classList.toggle("w3-show");
             // console.log(nav.classList);
         }
+        function homeHideNavbar() {
+            var nav = document.getElementById("mobileNav");
+            if (nav.classList.contains("w3-show")) {
+                nav.classList.remove("w3-show");
+            }
+        }
     </script>
 </body>
+
 </html>
