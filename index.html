@@ -17,18 +17,36 @@
         }
 
         main {
-            margin-top: 150px;
+            margin-top: 50px;
         }
 
         section {
             scroll-margin-top: 50px;
+        }
+        #home{
+          height: 400px;
+          background-image: url("assets/images/cup-of-coffee-work_1920.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+        }
+        section h2{
+            text-align:center
+        }
+
+        #btnToTop{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 3;
         }
     </style>
 </head>
 
 <body>
     <!-- HEADER START -->
-    <header class="w3-top w3-white">
+    <header class="w3-top w3-black">
         <nav id="desktopNav" class="w3-bar w3-border-bottom">
             <a href="javascript:void(0)" onclick="toogleNavbar()"
                 class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
@@ -47,12 +65,18 @@
         </nav>
     </header>
     <!-- HEADER END -->
+
+    <!-- HOME SECTION START -->
+    <section id="home" class="w3-display-container">
+        <h1 class="w3-display-middle w3-black w3-center">MY MOBILE WEBSITE</h1>
+    </section>
+
+    <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
+        <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
+    </button>
+
     <!-- MAIN START -->
     <main class="w3-container">
-        <!-- HOME SECTION START -->
-        <section id="home">
-            <h1>MY SUPER MOBILE WEBSITE</h1>
-        </section>
 
         <!-- ABOUT SECTION START -->
         <section id="about">
@@ -153,6 +177,17 @@
                 nav.classList.remove("w3-show");
             }
         }
+        function displayScrollToTopBtn(){
+            var btn = document.getElementById("btnToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                btn.classList.add("w3-show");
+            } else {
+                btn.classList.remove("w3-show");
+            }
+        }
+        window.addEventListener("scroll",function(){
+            displayScrollToTopBtn();
+        });
     </script>
 </body>
 
