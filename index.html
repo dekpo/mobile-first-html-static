@@ -11,9 +11,14 @@
     <meta property="og:description" content="One page website using simple css class for mobile optimization..." />
     <link rel="stylesheet" href="assets/css/w3css.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="icon" href="assets/images/3151589_bubble_chat_geek_message_icon.svg" type="image/svg+xml">
     <style>
         html {
             scroll-behavior: smooth;
+        }
+
+        body{
+            background-color: #eee ;
         }
 
         main {
@@ -23,39 +28,67 @@
         section {
             scroll-margin-top: 50px;
         }
-        #home{
-          height: 400px;
-          background-image: url("assets/images/cup-of-coffee-work_1920.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-attachment: fixed;
-        }
-        section h2{
-            text-align:center
+
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        h1,
+        h2,
+        h3 {
+            font-family: 'Pacifico', cursive;
         }
 
-        #btnToTop{
+        #home{
+            min-height: 400px;
+            background-image: url("assets/images/coding-gb660b6f3f_1280.jpg");
+        }
+
+        #portfolio{
+            min-height: 400px;
+            background-image: url("assets/images/cup-of-coffee-work_1920.jpg");
+        }
+
+        .parallax-background{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+        main > section{
+            margin: 50px 16px 50px;
+        }
+
+        #btnToTop {
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 3;
         }
+
+        #logo {
+            width: 50px;
+        }
+        #desktopNav .link-margin-top{
+            margin-top:15px;
+        }
+        
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER START -->
-    <header class="w3-top w3-black">
+    <header class="w3-top w3-white w3-card">
         <nav id="desktopNav" class="w3-bar w3-border-bottom">
             <a href="javascript:void(0)" onclick="toogleNavbar()"
-                class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
+                class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right link-margin-top">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button">Home</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button">
+                <img id="logo" src="assets/images/logo_bubble_chat_geek_message_icon.svg" alt="My Geek Logo"></a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small link-margin-top">About</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small link-margin-top">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small link-margin-top">Contact</a>
         </nav>
 
         <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
@@ -67,39 +100,45 @@
     <!-- HEADER END -->
 
     <!-- HOME SECTION START -->
-    <section id="home" class="w3-display-container">
-        <h1 class="w3-display-middle w3-black w3-center">MY MOBILE WEBSITE</h1>
+    <section id="home" class="w3-display-container parallax-background">
+        <h1 id="siteTitle" class="w3-display-middle w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+            MY <span class="w3-hide-small">MOBILE</span> WEBSITE
+        </h1>
     </section>
 
+    <!-- JUST MY GO TO TOP BUTTON -->
     <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
         <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
     </button>
 
     <!-- MAIN START -->
-    <main class="w3-container">
+    <main>
 
         <!-- ABOUT SECTION START -->
-        <section id="about">
-            <h2>About</h2>
+        <section id="about" class="w3-container w3-white">
             <div class="w3-row">
-                <div class="w3-half">
+            <h2 class="w3-center">ABOUT ME</h2>
+            <div class="w3-row">
+                <div class="w3-half" data-aos="fade-up">
                     <img src="assets/images/code-HTML_1280.jpg" alt="exemple de code HTML" class="w3-image">
                 </div>
-                <div class="w3-half w3-padding">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui
-                        accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur
-                        autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore
-                        voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil
-                        nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae?
-                        Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo
-                        excepturi fuga fugit ab voluptas. Architecto modi iste ipsam similique ab at neque, commodi
-                        quos. Eligendi, beatae. Suscipit voluptatibus culpa </p>
+                <div class="w3-half w3-padding" data-aos="fade-up">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui
+                    accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur
+                    autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore
+                    voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil
+                    nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae?
+                    Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo...
                 </div>
             </div>
         </section>
+
         <!-- PORTFOLIO SECTION START -->
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+        <div id="portfolio" class="w3-display-container w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity parallax-background">
+            <h2 class="w3-display-middle">PORTFOLIO</h2>
+        </div>
+
+        <section class="w3-container">
 
             <div class="w3-row-padding">
                 <article class="w3-col m4 w3-center">
@@ -141,7 +180,7 @@
                 Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
         </section>
         <!-- CONTACT SECTION START -->
-        <section id="contact">
+        <section id="contact" class="w3-container w3-white">
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus
                 natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus
@@ -165,9 +204,15 @@
     <!-- FOOTER START -->
     <footer></footer>
     <!-- FOOTER END -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        
+        AOS.init();
+
         function toogleNavbar() {
+            // select mobileNav
             var nav = document.getElementById("mobileNav");
+            // apply or not the w3-show
             nav.classList.toggle("w3-show");
             // console.log(nav.classList);
         }
@@ -177,15 +222,15 @@
                 nav.classList.remove("w3-show");
             }
         }
-        function displayScrollToTopBtn(){
+        function displayScrollToTopBtn() {
             var btn = document.getElementById("btnToTop");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 btn.classList.add("w3-show");
             } else {
                 btn.classList.remove("w3-show");
             }
         }
-        window.addEventListener("scroll",function(){
+        window.addEventListener("scroll", function () {
             displayScrollToTopBtn();
         });
     </script>
